@@ -1,0 +1,14 @@
+name = "yanagi-api"
+main = "src/index.ts"
+compatibility_date = "2026-10-14"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "yanagi-db"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+migrations_dir = "migrations"
+
+# Queue bindingはCloudflare側でQueueを作成後、必要に応じて追加してください。
+# [[queues.producers]]
+# binding = "TTS_QUEUE"
+# queue = "yanagi-tts"

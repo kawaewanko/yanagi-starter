@@ -1,0 +1,9 @@
+name = "yanagi-tts-worker"
+main = "src/index.ts"
+compatibility_date = "2026-10-14"
+
+# Queueを作成した後、consumer設定を追加してください。
+# [[queues.consumers]]
+# queue = "yanagi-tts"
+# max_batch_size = 5
+# max_retries = 3

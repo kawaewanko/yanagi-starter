@@ -1,0 +1,7 @@
+services:
+  voicevox:
+    image: voicevox/voicevox_engine:cpu-ubuntu20.04-latest
+    restart: unless-stopped
+    # 本番では外部に直接公開せず、内部ネットワーク/許可IPに制限してください。
+    ports:
+      - "127.0.0.1:50021:50021"
